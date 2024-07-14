@@ -6,4 +6,8 @@
   - name: copy file from master to node side
     copy: 
       src: mycopyfile 
-      dest: /home/maha/mycopyfile
+      dest: /home/maha/mycopyfile 
+  - name: install webserver
+    apt: 
+      name: apache2
+      state: present 
