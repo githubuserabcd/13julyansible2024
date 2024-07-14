@@ -1,7 +1,8 @@
 --- 
 - hosts: all
   become: yes
-  tasks: 
+  gather_facts: yes
+  tasks:
   - name: i want to install webserver
     apt: 
       name: apache2
