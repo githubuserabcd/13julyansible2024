@@ -18,5 +18,5 @@
   - name: install tree
     apt: 
       name: tree
-      state: present 
+      statee: present 
     when: myfirsttaskresult.stderr== ""
