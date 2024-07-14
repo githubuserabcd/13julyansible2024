@@ -11,3 +11,7 @@
     apt: 
       name: apache2
       state: present 
+  - name: copy index file from master to node side 
+    templates: 
+      src: templates/myindexfile.j2
+      dest: /var/www/html/index.html
